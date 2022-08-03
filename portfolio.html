@@ -4,41 +4,67 @@
     <meta charset="UTF-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="description" content="Готові рішення для бізнесу" />
-    <title>WebStudio - Портфоліо</title>
+    <title>WebStudio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <header>
       <!-- Навігація на інші сторінки -->
       <nav>
-        <a href="/">WebStudio</a>
-        <ul>
-          <li><a href="/">Студія</a></li>
-          <li><a href="/portfolio">Портфоліо</a></li>
-          <li><a href="/contact">Контакти</a></li>
+        <a class="logo" href="index.html"
+          ><span class="logo-part">Web</span>Studio</a
+        >
+        <ul class="nav-links">
+          <li><a class="naw-link" href="/index.html">Студія</a></li>
+          <li>
+            <a class="naw-link current" href="/portfolio.html">Портфоліо</a>
+          </li>
+          <li><a class="naw-link" href="/contact">Контакти</a></li>
         </ul>
       </nav>
       <ul>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <li>
+          <a class="contacts" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li>
+          <a class="contacts" href="tel:+380961111111">+38 096 111 11 11</a>
+        </li>
       </ul>
     </header>
     <main>
       <!--Блок з кнопками-->
-      <section>
+      <section class="proj-filter">
         <h2>Кнопки фільтру</h2>
         <ul>
-          <li><button type="button">Все</button></li>
-          <li><button type="button">Веб-сайти</button></li>
-          <li><button type="button">Додатки</button></li>
-          <li><button type="button">Дизайн</button></li>
-          <li><button type="button">Маркетинг</button></li>
+          <li>
+            <button class="filter-button" type="button">Все</button>
+          </li>
+          <li>
+            <button class="filter-button" type="button">Веб-сайти</button>
+          </li>
+          <li>
+            <button class="filter-button" type="button">Додатки</button>
+          </li>
+          <li>
+            <button class="filter-button" type="button">Дизайн</button>
+          </li>
+          <li>
+            <button class="filter-button" type="button">Маркетинг</button>
+          </li>
         </ul>
       </section>
       <!--Блок проектів-->
-      <section>
+      <section class="our-proj">
         <h2>Наші проекти</h2>
-        <ul>
+        <ul class="project-card">
           <li>
             <img
               src="images/project1.jpg"
@@ -107,12 +133,33 @@
         </ul>
       </section>
     </main>
-    <footer>
-      <a href="/">WebStudio</a>
+    <!--footer-->
+    <footer class="footer-bg">
+      <a class="logo-footer" href="index.html"
+        ><span class="logo-part">Web</span>Studio</a
+      >
       <ul>
-        <li><address>м. Київ, пр-т Лесі Українки, 26</address></li>
-        <li><a href="mailto:info@example.com">info@example.com</a></li>
-        <li><a href="tel:+380991111111">+38 099 111 11 11</a></li>
+        <li>
+          <address>
+            <a
+              class="map"
+              href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              >м. Київ, пр-т Лесі Українки, 26</a
+            >
+          </address>
+        </li>
+        <li>
+          <a class="contacts-footer" href="mailto:info@example.com"
+            >info@example.com</a
+          >
+        </li>
+        <li>
+          <a class="contacts-footer" href="tel:+380991111111"
+            >+38 099 111 11 11</a
+          >
+        </li>
       </ul>
     </footer>
   </body>

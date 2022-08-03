@@ -5,6 +5,12 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="description" content="Готові рішення для бізнесу" />
     <title>WebStudio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
@@ -12,28 +18,42 @@
     <header>
       <!-- Навігація на інші сторінки -->
       <nav>
-        <a href="/">WebStudio</a>
+        <a class="logo" href="index.html"
+          ><span class="logo-part">Web</span>Studio</a
+        >
         <ul>
-          <li><a href="">Студія</a></li>
-          <li><a href="portfolio.html">Портфоліо</a></li>
-          <li><a href="/contact">Контакти</a></li>
+          <li>
+            <a class="naw-link current" href="/index.html">Студія</a>
+          </li>
+          <li>
+            <a class="naw-link" href="/portfolio.html">Портфоліо</a>
+          </li>
+          <li>
+            <a class="naw-link" href="/contact">Контакти</a>
+          </li>
         </ul>
       </nav>
       <ul>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <li>
+          <a class="contacts" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li>
+          <a class="contacts" href="tel:+380961111111">+38 096 111 11 11</a>
+        </li>
       </ul>
     </header>
     <!--Основний контент-->
     <main>
       <!--Банер-->
-      <section>
+      <section class="baner">
         <h1>Ефективні рішення для вашого бізнесу</h1>
-        <button type="button">Замовити послугу</button>
+        <button class="baner-button" type="button">Замовити послугу</button>
       </section>
       <!--Чому саме ми-->
-      <section>
-        <h2>Переваги</h2>
+      <section class="why-we-are">
+        <h2 class="why-we-are-title">Переваги</h2>
         <ul>
           <li>
             <h3>УВАГА ДО ДЕТАЛЕЙ</h3>
@@ -65,8 +85,8 @@
         </ul>
       </section>
       <!--Чим ми займаємося-->
-      <section>
-        <h2>Чим ми займаємося</h2>
+      <section class="what-we-do">
+        <h2 class="what-we-do-title">Чим ми займаємося</h2>
         <ul>
           <li>
             <img src="images/pic1.jpg" alt="Кодінг по алгоритму" width="370" />
@@ -88,8 +108,8 @@
         </ul>
       </section>
       <!--Наша команда-->
-      <section>
-        <h2>Наша команда</h2>
+      <section class="team">
+        <h2 class="team-title">Наша команда</h2>
         <!--card1-->
         <ul>
           <li>
@@ -139,12 +159,32 @@
       </section>
     </main>
     <!--Футер-->
-    <footer>
-      <a href="/">WebStudio</a>
+    <footer class="footer-bg">
+      <a class="logo-footer" href="index.html"
+        ><span class="logo-part">Web</span>Studio</a
+      >
       <ul>
-        <li><address>м. Київ, пр-т Лесі Українки, 26</address></li>
-        <li><a href="mailto:info@example.com">info@example.com</a></li>
-        <li><a href="tel:+380991111111">+38 099 111 11 11</a></li>
+        <li>
+          <address>
+            <a
+              class="map"
+              href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              >м. Київ, пр-т Лесі Українки, 26</a
+            >
+          </address>
+        </li>
+        <li>
+          <a class="contacts-footer" href="mailto:info@example.com"
+            >info@example.com</a
+          >
+        </li>
+        <li>
+          <a class="contacts-footer" href="tel:+380991111111"
+            >+38 099 111 11 11</a
+          >
+        </li>
       </ul>
     </footer>
   </body>
