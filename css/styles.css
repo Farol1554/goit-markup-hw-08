@@ -136,14 +136,12 @@ body {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
-  font-weight: bold;
   text-decoration: none;
   color: var(--whight-color);
 }
 .contacts-footer {
   font-size: 14px;
   line-height: 1.71;
-  font-weight: bold;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
 }
