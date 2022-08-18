@@ -11,36 +11,37 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <!--Шапка сайту-->
     <header>
-      <div class="container">
+      <div class="container page-header">
       <!-- Навігація на інші сторінки -->
-      <nav>
+      <nav class="naw-header">
         <a class="logo" href="index.html"
           ><span class="logo-part">Web</span>Studio</a
         >
-        <ul>
-          <li>
+        <ul class="naw-button">
+          <li class="header-nav-item">
             <a class="naw-link current" href="./index.html">Студія</a>
           </li>
-          <li>
+          <li class="header-nav-item">
             <a class="naw-link" href="./portfolio.html">Портфоліо</a>
           </li>
-          <li>
+          <li class="header-nav-item">
             <a class="naw-link" href="/contact">Контакти</a>
           </li>
         </ul>
       </nav>
-      <ul>
-        <li>
+      <ul class="naw-contacts">
+        <li class="header-cont-item">
           <a class="contacts" href="mailto:info@devstudio.com"
             >info@devstudio.com</a
           >
         </li>
-        <li>
+        <li class="header-cont-item">
           <a class="contacts" href="tel:+380961111111">+38 096 111 11 11</a>
         </li>
       </ul>
@@ -49,39 +50,39 @@
     <!--Основний контент-->
     <main>
       <!--Банер-->
-      <section class="banner">
+      <section class="banner section">
         <div class="container">
         <h1>Ефективні рішення для вашого бізнесу</h1>
         <button class="banner-button" type="button">Замовити послугу</button>
       </div>
     </section>
       <!--Чому саме ми-->
-      <section class="why-we-are">
-        <div class="container">
-        <h2 class="title">Переваги</h2>
-        <ul>
-          <li>
-            <h3>УВАГА ДО ДЕТАЛЕЙ</h3>
+      <section class="why-we-are section">
+        <div class="container why-we-are-cont">
+        <h2 class="title hide">Переваги</h2>
+        <ul class="why-we-are-list">
+          <li class="why-we-are-list-item">
+            <h3 class="title-list">УВАГА ДО ДЕТАЛЕЙ</h3>
             <p>
               Ідейні міркування, і навіть початок повсякденної роботи з
               формування позиції.
             </p>
           </li>
-          <li>
-            <h3>ПУНКТУАЛЬНІСТЬ</h3>
+          <li class="why-we-are-list-item">
+            <h3 class="title-list">ПУНКТУАЛЬНІСТЬ</h3>
             <p>
               Завдання організації, особливо рамки і місце навчання кадрів тягне
               у себе.
             </p>
           </li>
-          <li>
-            <h3>ПЛАНУВАННЯ</h3>
+          <li class="why-we-are-list-item">
+            <h3 class="title-list">ПЛАНУВАННЯ</h3>
             <p>
               Так само консультація з широким активом значною мірою зумовлює.
             </p>
           </li>
-          <li>
-            <h3>СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+          <li class="why-we-are-list-item">
+            <h3 class="title-list">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
             <p>
               Значимість цих проблем настільки очевидна, що реалізація планових
               завдань.
@@ -90,7 +91,8 @@
         </ul>
       </section>
       <!--Чим ми займаємося-->
-      <section class="what-we-do">
+      <section class="what-we-do section">
+        <div class="container">
         <h2 class="title">Чим ми займаємося</h2>
         <ul>
           <li>
@@ -114,7 +116,7 @@
       </div>
       </section>
       <!--Наша команда-->
-      <section class="team">
+      <section class="team section">
         <div class="container">
         <h2 class="title">Наша команда</h2>
         <!--card1-->

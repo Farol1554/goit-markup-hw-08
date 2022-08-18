@@ -5,6 +5,69 @@
   --h3-color: #212121;
   --p-color: #757575;
   --footer-color: #2f303a;
+  --card-set-gap: 30px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid red; 
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.page-header {
+  display: flex;
+  border-bottom: 1px solid #ececec;
+  align-items: center;
+}
+.naw-header {
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.naw-button {
+  display:flex;
+  margin-left: 93px;
+  align-items: center;
+}
+.naw-contacts {
+  display: flex;
+  margin-left: 344px;
+  align-items: center;
+  margin-left: auto;
+}
+.header-nav-item:not(:last-child) {
+  margin-right: 50px;
+} 
+.header-cont-item + .header-cont-item {
+  margin-left: 50px;
+}
+.why-we-are-list {
+  display: flex;
+  margin-right: calc(-1 * var(--card-set-gap))
+}
+.why-we-are-list > .why-we-are-list-item 
+{ margin-right: var(--card-set-gap);
+  flex-basis: calc (100%/4 - var(--card-set-gap));
+}
+.title-list {
+  margin-bottom: 10px;
 }
 /*фон*/
 body {
@@ -15,8 +78,18 @@ body {
   letter-spacing: 0.03em;
   color: var(--p-color);
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .footer-bg {
   background-color: var(--footer-color);
+}
+li {
+  list-style: none;}
+.hide {
+  display: none;
 }
 /*logo*/
 .logo {
@@ -115,6 +188,7 @@ body {
   text-transform: uppercase;
   color: var(--h3-color);
 }
+
 .why-we-are p {
   font-size: 14px;
   line-height: 1.71;
