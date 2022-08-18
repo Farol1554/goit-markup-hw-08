@@ -60,7 +60,7 @@ ul {
 }
 .why-we-are-list {
   display: flex;
-  margin-left: calc(-1 * var(--card-set-gap))
+  margin-left: calc(-1 * var(--card-set-gap));
 }
 .why-we-are-list > .why-we-are-list-item 
 { margin-left: var(--card-set-gap);
