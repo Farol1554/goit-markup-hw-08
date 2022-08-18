@@ -60,10 +60,10 @@ ul {
 }
 .why-we-are-list {
   display: flex;
-  margin-right: calc(-1 * var(--card-set-gap))
+  margin-left: calc(-1 * var(--card-set-gap))
 }
 .why-we-are-list > .why-we-are-list-item 
-{ margin-right: var(--card-set-gap);
+{ margin-left: var(--card-set-gap);
   flex-basis: calc (100%/4 - var(--card-set-gap));
 }
 .title-list {
