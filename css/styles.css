@@ -39,9 +39,11 @@ img {
   padding-bottom: 94px;
 }
 /*header-section*/
+header {
+  border-bottom: 1px solid #ececec;
+}
 .page-header {
   display: flex;
-  border-bottom: 1px solid #ececec;
   align-items: center;
 }
 .naw-header {
@@ -138,7 +140,8 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 .card-text {
-  padding: 30px 70px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .team-title-card {
   padding-bottom: 10px;
@@ -275,6 +278,9 @@ li {
   line-height: 1.71;
 }
 /*team*/
+.team {
+  background-color: #f5f4fa;
+}
 .team h3 {
   font-weight: 500;
   line-height: 1.18;
