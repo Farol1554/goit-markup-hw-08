@@ -127,7 +127,9 @@ header {
 }
 /* do-section*/
 /*team-section*/
-
+.card-item {
+  flex-basis: calc((100% - 3 * 30px) / 4);
+}
 .container > .card-list {
   display: flex;
   flex-basis: calc((100% - 3 * 30px) / 4);
