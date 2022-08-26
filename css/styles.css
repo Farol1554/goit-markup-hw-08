@@ -115,14 +115,17 @@ header {
 /*why-we-are-section*/
 .why-we-are-list {
   display: flex;
-  margin-right: -30px;
+  justify-content: center;
 }
 .why-we-are-list > .why-we-are-list-item {
-  flex-basis: calc((100% - 3 * 30px) / 4);
-  justify-content: space-between;
+  margin-right: calc(-1 * var(--card-set-gap));
+  flex-basis: calc((100% - 3 * var(--card-set-gap)) / 4);
 }
 .why-we-are-list-item:not(:last-child) {
   margin-right: var(--card-set-gap);
+}
+.box-icons-items {
+  margin-bottom: 55px;
 }
 .title-list {
   margin-bottom: 10px;
