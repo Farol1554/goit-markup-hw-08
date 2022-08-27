@@ -125,11 +125,12 @@ header {
 .why-we-are-list-item:not(:last-child) {
   margin-right: var(--card-set-gap);
 }
-.box-icons svg {
-  width: 270px;
+.box-icons {
+  display: flex;
+  margin-bottom: 55px;
+  background-color: #f5f4fa;
 }
 .box-icons-items {
-  margin-bottom: 55px;
 }
 .title-list {
   margin-bottom: 10px;
@@ -400,6 +401,8 @@ li {
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/hero.jpg);
+  width: 1600px;
+  margin: 0 auto;
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 200px;
@@ -476,6 +479,9 @@ li {
 }
 .description-title {
   color: var(--h3-color);
+}
+.cards-link {
+  display: block;
 }
 .cards-link:hover,
 .cards-link:focus {
