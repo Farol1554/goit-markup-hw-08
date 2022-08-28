@@ -120,7 +120,7 @@ header {
 }
 .why-we-are-list > .why-we-are-list-item {
   margin-right: calc(-1 * var(--card-set-gap));
-  flex-basis: calc((100% - 3 * var(--card-set-gap)) / 4);
+  width: calc((100% - 3 * var(--card-set-gap)) / 4);
 }
 .why-we-are-list-item:not(:last-child) {
   margin-right: var(--card-set-gap);
@@ -129,6 +129,8 @@ header {
   display: flex;
   margin-bottom: 55px;
   background-color: #f5f4fa;
+  height: 120px;
+  align-items: center;
 }
 .box-icons-items {
 }
