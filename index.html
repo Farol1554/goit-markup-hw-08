@@ -25,7 +25,7 @@
         >
         <ul class="naw-button">
           <li class="header-nav-item">
-            <a class="naw-link current" href="./index.html">Студія</a>
+            <a class="naw-link current-studio" href="./index.html">Студія</a>
           </li>
           <li class="header-nav-item">
             <a class="naw-link" href="./portfolio.html">Портфоліо</a>
@@ -60,7 +60,7 @@
       <section class="banner">
         <div class="container banner-cont">
         <h1 class="banner-title">Ефективні рішення для <br>вашого бізнесу</br></h1>
-        <button class="banner-button" type="button">Замовити послугу</button>
+        <button class="banner-button" type="button" data-modal-open>Замовити послугу</button>
       </div>
     </section>
       <!--Чому саме ми-->
@@ -120,6 +120,9 @@
         <ul class="do-list">
           <li class="do-list-item">
             <img src="images/pic1.jpg" alt="Кодінг по алгоритму" width="370" />
+<div class="work-item-bg"> 
+<p class="work-item-title">Десктопні додатки</p>
+</div>
           </li>
           <li class="do-list-item">
             <img
@@ -127,13 +130,18 @@
               alt="Тестування різних варіантів інтерфейсу на телефоні"
               width="370"
             />
+<div class="work-item-bg">
+<p class="work-item-title">Мобільні додатки</p>
+</div>
           </li>
           <li class="do-list-item">
             <img
               src="images/pic3.jpg"
               alt="Підбор колорової гамми"
-              width="370"
-            />
+              width="370"/>
+<div class="work-item-bg">
+<p class="work-item-title">Дизайнерські рішення</p>
+</div>            
           </li>
         </ul>
       </div>
@@ -448,5 +456,15 @@
       </div>
     </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close-btn" data-modal-close>
+          <svg class="modal-close-icon" width="18" height="18">
+            <use href="./images//icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+      <script src="../js/modal.js"></script>
   </body>
 </html>
