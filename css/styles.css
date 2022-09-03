@@ -172,9 +172,11 @@ header {
   position: absolute;
   width: 100%;
   bottom: 0;
+  padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 70px;
   background-color: rgba(47, 48, 58, 0.8);
 }
 .work-item-title {
@@ -182,6 +184,7 @@ header {
   text-transform: uppercase;
   font-weight: 700;
   line-height: 16px;
+  font-size: 14px;
   color: var(--whight-color);
 }
 /* do-section*/
@@ -231,6 +234,7 @@ header {
 .social-logo {
   fill: #afb1b8;
   margin: 12px 12px;
+  transition: fill 250ms var(--transition-timing-function);
 }
 .link-social:hover,
 .link-social:focus {
@@ -271,6 +275,7 @@ header {
 }
 .clients-icon {
   fill: #afb1b8;
+  transition: fill 250ms var(--transition-timing-function);
 }
 .link-clients:hover .clients-icon,
 .link-clients:focus .clients-icon {
@@ -553,8 +558,10 @@ li {
   border: 0;
   border-radius: 4px;
   padding: 6px 22px;
-  transition: color 250ms var(--transition-timing-function);
-  transition: background-color 250ms var(--transition-timing-function);
+  transition: color 250ms var(--transition-timing-function),
+    background-color 250ms var(--transition-timing-function),
+    color 250ms var(--transition-timing-function),
+    box-shadow 250ms var(--transition-timing-function);
 }
 /*card-gap*/
 .project-card {
@@ -625,7 +632,7 @@ li {
   height: 30px;
   border-radius: 50%;
   background-color: transparent;
-  border: 1px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0;
   cursor: pointer;
 }
@@ -635,16 +642,20 @@ li {
   overflow: hidden;
 }
 .card-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   background-color: rgba(33, 150, 243, 0.9);
   font-weight: 400;
   font-size: 18px;
-  line-height: 28px;
+  line-height: 1.55;
   letter-spacing: 0.03em;
   color: var(--whight-color);
   top: 0px;
   left: 0px;
-  padding: 63px 24px;
+  padding-left: 24px;
+  padding-right: 24px;
   overflow: hidden;
   height: 100%;
   width: 100%;
@@ -654,4 +665,11 @@ li {
 .cards-link-overflow:hover .card-info,
 .cards-link-overflow:focus .card-info {
   transform: translateY(0%);
+}
+.active {
+  background: var(--main-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  color: var(--whight-color);
 }
