@@ -539,7 +539,9 @@ li {
 }
 .cards-link {
   display: block;
+  transition: box-shadow 250ms var(--transition-timing-function);
 }
+
 /*кнопки фільтру*/
 .filter-button {
   font-size: 16px;
@@ -656,14 +658,16 @@ li {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: translateY(100%);
 }
- .cards-link-overflow {
-  display:block;  transition: box-shadow 250ms var(--transition-timing-function); 
+.cards-link-overflow {
+  display: block;
+  transition: box-shadow 250ms var(--transition-timing-function);
 }
-.cards-link-overflow:hover, 
-.cards-link-overflow:focus
- { box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%), 1px 4px 6px rgb(0 0 0 / 16%);} 
+.cards-link-overflow:hover,
+.cards-link-overflow:focus {
+  box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%),
+    1px 4px 6px rgb(0 0 0 / 16%);
+}
 
-}
 .cards-link-overflow:hover .card-info,
 .cards-link-overflow:focus .card-info {
   transform: translateY(0%);
