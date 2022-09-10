@@ -588,65 +588,62 @@ li {
   border-radius: 4px;
   color: var(--whight-color);
 }
+
 .backdrop {
   position: fixed;
   top: 0;
+  bottom: 0;
+  right: 0;
   left: 0;
-  z-index: 100;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-  transition: opacity 500ms ease, visibility 500ms ease;
-}
 
-.backdrop.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
+  transition: opacity 250ms var(--transition-timing-function);
 }
-
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 528px;
-  height: 580px;
-  background-color: rgb(255, 255, 255);
+  padding: 40px;
+  transition: transform 250ms var(--transition-timing-function) 100ms;
+  background-color: var(--whight-color);
+  z-index: 100;
 }
-
+.icon-close-btn {
+  transition: fill 250ms var(--transition-timing-function) 100ms;
+}
 .modal-close-btn {
-  position: absolute;
-  top: 8px;
-  right: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 0;
   width: 30px;
   height: 30px;
+
   border-radius: 50%;
-  background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 0;
+  fill: #000000;
+  background: none;
   cursor: pointer;
 }
-.modal-form-title {
-  font-weight: 700;
-  font-size: 20px;
-  color: var(--h3-color);
-  margin-top: 40px;
-  margin-bottom: 12px;
-  text-align: center;
+.close-btn:hover,
+.close-btn:focus {
+  fill: var(--main-color);
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
 }
 
-.overlay-card {
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-}
 .modal-form-title {
   margin-bottom: 12px;
   color: var(--h3-color);
@@ -697,6 +694,7 @@ li {
   transform: translateY(-50%);
   transition: fill 250ms var(--transition-timing-function);
 }
+
 .textarea-modal-form {
   width: 100%;
   height: 120px;
@@ -720,6 +718,7 @@ li {
 }
 .privacy {
   color: var(--main-color);
+
   transition: text-decoration 250ms var(--transition-timing-function);
 }
 .privacy:hover,
@@ -760,6 +759,7 @@ li {
 
   text-align: center;
 }
+
 .checkbox-modal-form {
   position: absolute;
   width: 1px;
@@ -767,6 +767,7 @@ li {
   margin: -1px;
   border: 0;
   padding: 0;
+
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
@@ -783,6 +784,7 @@ li {
   transition: opasity 250ms var(--transition-timing-function);
 }
 .checkbox-checked {
+  position: absolute;
   top: 0;
   left: 10px;
   width: 16px;
@@ -796,6 +798,7 @@ li {
 .checkbox-modal-form:focus ~ .checkbox-checked {
   border-color: var(--main-color);
 }
+
 .checkbox-modal-form:checked ~ .checkbox-checked {
   opacity: 1;
 }
@@ -805,10 +808,89 @@ li {
 .checkbox-modal-form ~ .icon-checkbox-modal {
   opacity: 0;
 }
-.modal-form {
-  margin-left: 40px;
-  margin-right: 40px;
+/* footer section */
+.foot {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
+.logo-foot {
+  display: block;
+  width: 145px;
+  margin-bottom: 20px;
+}
+
+.foot-contact {
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.71;
+  transition: color 250ms var(--transition-timing-function);
+}
+.address {
+  font-style: normal;
+}
+.address-list {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.address-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+.map {
+  color: rgb(255, 255, 255);
+  line-height: 1.71;
+  transition: color 250ms var(--transition-timing-function);
+}
+.singin {
+  margin-bottom: 20px;
+  text-align: left;
+  color: var(--whight-color);
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.sing-section {
+  margin-left: 70px;
+}
+
+.singin-list {
+  display: flex;
+}
+.singin-link {
+  display: flex;
+
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+
+  flex-basis: calc((100% - 30px) / 4);
+
+  transition: fill 250ms var(--transition-timing-function),
+    background-color 250ms var(--transition-timing-function);
+}
+.singin-logo:not(:last-child) {
+  margin-right: 10px;
+}
+.singin-icon {
+  fill: var(--whight-color);
+
+  margin: 12px 12px;
+  transition: fill 250ms var(--transition-timing-function);
+}
+.singin-link:hover,
+.singin-link:focus {
+  background-color: var(--main-color);
+}
+.singin-link:hover .singin-icon,
+.singin-link:focus .singin-icon {
+  fill: var(--whight-color);
+}
+.foot .container {
+  display: flex;
+  align-items: baseline;
+}
+
 .card-info {
   display: flex;
   align-items: center;
