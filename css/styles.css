@@ -890,7 +890,11 @@ li {
   display: flex;
   align-items: baseline;
 }
-
+.overlay-card {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
 .card-info {
   display: flex;
   align-items: center;
