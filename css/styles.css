@@ -782,12 +782,13 @@ li {
   overflow: hidden;
 }
 .icon-checkbox-modal {
-  position: absolute;
-  top: 0;
-  left: -16px;
+  width: 100%;
   width: 16px;
   height: 15px;
   transition: opasity 250ms var(--transition-timing-function);
+  display: flex;
+  align-items: center;
+  position: absolute;
 }
 .checkbox-checked {
   /*position: absolute;
@@ -795,7 +796,7 @@ li {
   left: -16px;*/
   width: 16px;
   height: 15px;
-  display: inline-block;
+  display: flex;
   border: 2px solid var(--h3-color);
   border-radius: 2px;
   margin-right: 7px;
