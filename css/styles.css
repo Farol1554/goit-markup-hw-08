@@ -753,7 +753,7 @@ li {
   background-color: var(--accent-color);
 }
 .label-privacy {
-  position: relative;
+  /*position: relative;*/
   width: 100%;
   cursor: pointer;
   font-weight: 400;
@@ -761,6 +761,8 @@ li {
   line-height: 24px;
   letter-spacing: 0.03em;
   padding-left: 7px;
+  display: flex;
+  align-items: center;
 }
 .privacy-checkbox {
   position: relative;
@@ -788,14 +790,15 @@ li {
   transition: opasity 250ms var(--transition-timing-function);
 }
 .checkbox-checked {
-  position: absolute;
+  /*position: absolute;
   top: 0;
-  left: -16px;
+  left: -16px;*/
   width: 16px;
   height: 15px;
   display: inline-block;
   border: 2px solid var(--h3-color);
   border-radius: 2px;
+  margin-right: 7px;
 }
 
 .checkbox-modal-form:hover ~ .checkbox-checked,
