@@ -649,8 +649,7 @@ li {
   line-height: 16px;
   color: var(--h3-color);
   font-weight: 700;
-  text-transform: uppercase;
-  font-size: 14px;
+  font-size: 20px;
   text-align: center;
 }
 
@@ -754,6 +753,7 @@ li {
   background-color: var(--accent-color);
 }
 .label-privacy {
+  position: relative;
   width: 100%;
   cursor: pointer;
   font-weight: 400;
@@ -774,7 +774,6 @@ li {
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
@@ -783,7 +782,7 @@ li {
 .icon-checkbox-modal {
   position: absolute;
   top: 0;
-  left: 10px;
+  left: -16px;
   width: 16px;
   height: 15px;
   transition: opasity 250ms var(--transition-timing-function);
@@ -791,7 +790,7 @@ li {
 .checkbox-checked {
   position: absolute;
   top: 0;
-  left: 10px;
+  left: -16px;
   width: 16px;
   height: 15px;
   display: inline-block;
