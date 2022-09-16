@@ -1,0 +1,32 @@
+.advances h3 {
+  font-size: 14px;
+  line-height: 1.14;
+
+  text-transform: uppercase;
+  color: var(--h3-color);
+}
+
+.advances p {
+  font-size: 14px;
+  line-height: 1.71;
+}
+.advances__list {
+  display: flex;
+  justify-content: center;
+}
+.advances__list > .advances__item {
+  width: calc((100% - 3 * var(--card-set-gap)) / 4);
+}
+.advances__item:not(:last-child) {
+  margin-right: var(--card-set-gap);
+}
+.advances__icons {
+  display: flex;
+  margin-bottom: 55px;
+  background-color: #f5f4fa;
+  height: 120px;
+  align-items: center;
+}
+.subtitle {
+  margin-bottom: 10px;
+}
