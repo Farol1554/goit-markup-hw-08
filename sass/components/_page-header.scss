@@ -5,6 +5,7 @@ header {
   display: flex;
   align-items: center;
 }
+
 .contact {
   display: flex;
   align-items: center;
@@ -15,15 +16,6 @@ header {
   text-decoration: none;
   color: var(--p-color);
   fill: var(--p-color);
-  transition: color 250ms var(--transition-timing-function);
-  &:hover,
-  &:focus {
-    color: var(--main-color);
-  }
-  &:hover svg,
-  &:focus svg {
-    fill: var(--main-color);
-  }
 }
 .contact svg {
   transition: fill 250ms var(--transition-timing-function);
@@ -38,6 +30,15 @@ header {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  transition: color 250ms var(--transition-timing-function);
+  &:hover,
+  &:focus {
+    color: var(--main-color);
+  }
+  &:hover svg,
+  &:focus svg {
+    fill: var(--main-color);
+  }
 }
 .contact__item + .contact__item {
   margin-left: 50px;
