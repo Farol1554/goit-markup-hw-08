@@ -22,7 +22,6 @@
   <body>
     <header class="header">
       <div class="container page-header">
-        <!-- Навігація на інші сторінки -->
         <nav class="menu">
           <a class="menu__logo" href="index.html">
             <span class="menu__logo--part">Web</span>Studio</a
@@ -45,14 +44,14 @@
           <li class="contact__item">
             <a class="contact_link" href="mailto:info@devstudio.com"
               ><svg class="contact__icon" width="16" height="12">
-                <use href="./images/icons.svg#icon-envelope "></use></svg
+                <use href="./images/SVG/icons.svg#icon-envelope "></use></svg
               >info@devstudio.com
             </a>
           </li>
           <li class="contact__item">
             <a class="contact_link" href="tel:+380961111111">
               <svg class="contact__icon" width="10" height="16">
-                <use href="./images/icons.svg#icon-smartphone"></use></svg
+                <use href="./images/SVG/icons.svg#icon-smartphone"></use></svg
               >+38 096 111 11 11
             </a>
           </li>
@@ -66,19 +65,19 @@
         <div class="container portfolio">
           <h1 class="title visually-hidden">Наші проекти</h1>
           <ul class="filter">
-            <li>
+            <li class="filter__item">
               <button class="filter__button active" type="button">Все</button>
             </li>
-            <li>
+            <li class="filter__item">
               <button class="filter__button" type="button">Веб-сайти</button>
             </li>
-            <li>
+            <li class="filter__item">
               <button class="filter__button" type="button">Додатки</button>
             </li>
-            <li>
+            <li class="filter__item">
               <button class="filter__button" type="button">Дизайн</button>
             </li>
-            <li>
+            <li class="filter__item">
               <button class="filter__button" type="button">Маркетинг</button>
             </li>
           </ul>
@@ -87,12 +86,35 @@
             <li class="card__link">
               <a href="" class="card__link--overflow">
                 <div class="card--overlay">
-                  <img
-                    class="card__image"
-                    src="images/project1.jpg"
-                    alt="макап сайту Технокряк"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project/l/project1-l.jpg    1x,
+                        ./images/project/l/project1-l@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project/m/project1-m.jpg    1x,
+                        ./images/project/m/project1-m@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project/s/project1-s.jpg    1x,
+                        ./images/project/s/project1-s@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="card__image"
+                      src="./images/project/s/project1-s.jpg"
+                      alt="ноутбук"
+                      width="370"
+                    />
+                  </picture>
                   <p class="card__text--overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -108,12 +130,35 @@
             <li class="card__link">
               <a href="" class="card__link--overflow">
                 <div class="card--overlay">
-                  <img
-                    class="card__image"
-                    src="images/project2.jpg"
-                    alt="Постер New Orlean vs Golden Star"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project/l/project2-l.jpg    1x,
+                        ./images/project/l/project2-l@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project/m/project2-m.jpg    1x,
+                        ./images/project/m/project2-m@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project/s/project2-s.jpg    1x,
+                        ./images/project/s/project2-s@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="card__image"
+                      src="./images/project/s/project2-s.jpg"
+                      alt="ноутбук"
+                      width="370"
+                    />
+                  </picture>
                   <p class="card__text--overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -132,12 +177,35 @@
             <li class="card__link">
               <a href="" class="card__link--overflow">
                 <div class="card--overlay">
-                  <img
-                    class="card__image"
-                    src="images/project3.jpg"
-                    alt="Логотип Seafood"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project/l/project3-l.jpg    1x,
+                        ./images/project/l/project3-l@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project/m/project3-m.jpg    1x,
+                        ./images/project/m/project3-m@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project/s/project3-s.jpg    1x,
+                        ./images/project/s/project3-s@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="card__image"
+                      src="./images/project/s/project3-s.jpg"
+                      alt="ноутбук"
+                      width="370"
+                    />
+                  </picture>
                   <p class="card__text--overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -155,12 +223,35 @@
             <li class="card__link">
               <a href="" class="card__link--overflow">
                 <div class="card--overlay">
-                  <img
-                    class="card__image"
-                    src="images/project4.jpg"
-                    alt="Навушники"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project/l/project4-l.jpg    1x,
+                        ./images/project/l/project4-l@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project/m/project4-m.jpg    1x,
+                        ./images/project/m/project4-m@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project/s/project4-s.jpg    1x,
+                        ./images/project/s/project4-s@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="card__image"
+                      src="./images/project/s/project4-s.jpg"
+                      alt="ноутбук"
+                      width="370"
+                    />
+                  </picture>
                   <p class="card__text--overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -178,12 +269,35 @@
             <li class="card__link">
               <a href="" class="card__link--overflow">
                 <div class="card--overlay">
-                  <img
-                    class="card__image"
-                    src="images/project5.jpg"
-                    alt="Коробки"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project/l/project5-l.jpg    1x,
+                        ./images/project/l/project5-l@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project/m/project5-m.jpg    1x,
+                        ./images/project/m/project5-m@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project/s/project5-s.jpg    1x,
+                        ./images/project/s/project5-s@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="card__image"
+                      src="./images/project/s/project5-s.jpg"
+                      alt="ноутбук"
+                      width="370"
+                    />
+                  </picture>
                   <p class="card__text--overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -201,12 +315,35 @@
             <li class="card__link">
               <a href="" class="card__link--overflow">
                 <div class="card--overlay">
-                  <img
-                    class="card__image"
-                    src="images/project6.jpg"
-                    alt="Макап сайту Inspiration has no Borders"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project/l/project6-l.jpg    1x,
+                        ./images/project/l/project6-l@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project/m/project6-m.jpg    1x,
+                        ./images/project/m/project6-m@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project/s/project6-s.jpg    1x,
+                        ./images/project/s/project6-s@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="card__image"
+                      src="./images/project/s/project6-s.jpg"
+                      alt="ноутбук"
+                      width="370"
+                    />
+                  </picture>
                   <p class="card__text--overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -224,12 +361,35 @@
             <li class="card__link">
               <a href="" class="card__link--overflow">
                 <div class="card--overlay">
-                  <img
-                    class="card__image"
-                    src="images/project7.jpg"
-                    alt="Журнал Limited Edition"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project/l/project7-l.jpg    1x,
+                        ./images/project/l/project7-l@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project/m/project7-m.jpg    1x,
+                        ./images/project/m/project7-m@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project/s/project7-s.jpg    1x,
+                        ./images/project/s/project7-s@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="card__image"
+                      src="./images/project/s/project7-s.jpg"
+                      alt="ноутбук"
+                      width="370"
+                    />
+                  </picture>
                   <p class="card__text--overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -247,12 +407,35 @@
             <li class="card__link">
               <a href="" class="card__link--overflow">
                 <div class="card--overlay">
-                  <img
-                    class="card__image"
-                    src="images/project8.jpg"
-                    alt="бірка LAB"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project/l/project8-l.jpg    1x,
+                        ./images/project/l/project8-l@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project/m/project8-m.jpg    1x,
+                        ./images/project/m/project8-m@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project/s/project8-s.jpg    1x,
+                        ./images/project/s/project8-s@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="card__image"
+                      src="./images/project/s/project8-s.jpg"
+                      alt="ноутбук"
+                      width="370"
+                    />
+                  </picture>
                   <p class="card__text--overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -270,12 +453,35 @@
             <li class="card__link">
               <a href="" class="card__link--overflow">
                 <div class="card--overlay">
-                  <img
-                    class="card__image"
-                    src="images/project9.jpg"
-                    alt="макап Growing Business"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project/l/project9-l.jpg    1x,
+                        ./images/project/l/project9-l@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project/m/project9-m.jpg    1x,
+                        ./images/project/m/project9-m@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project/s/project9-s.jpg    1x,
+                        ./images/project/s/project9-s@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="card__image"
+                      src="./images/project/s/project9-s.jpg"
+                      alt="ноутбук"
+                      width="370"
+                    />
+                  </picture>
                   <p class="card__text--overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -294,7 +500,6 @@
         </div>
       </section>
     </main>
-    <!--footer-->
     <footer class="footer">
       <div class="container footer__content">
         <div>
@@ -331,26 +536,26 @@
             <li class="join__logo">
               <a href="" class="join__link">
                 <svg class="join__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-instagram"></use>
+                  <use href="./images/SVG/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="join__logo">
               <a href="" class="join__link">
                 <svg class="join__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-twitter"></use></svg
+                  <use href="./images/SVG/icons.svg#icon-twitter"></use></svg
               ></a>
             </li>
             <li class="join__logo">
               <a href="" class="join__link">
                 <svg class="join__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-facebook"></use></svg
+                  <use href="./images/SVG/icons.svg#icon-facebook"></use></svg
               ></a>
             </li>
             <li class="join__logo">
               <a href="" class="join__link">
                 <svg class="join__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-linkedin"></use></svg
+                  <use href="./images/SVG/icons.svg#icon-linkedin"></use></svg
               ></a>
             </li>
           </ul>
@@ -369,7 +574,7 @@
             <button class="subscribe__button" type="submit">
               Підписатися
               <svg class="subscribe__icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-send"></use>
+                <use href="./images/SVG/icons.svg#icon-send"></use>
               </svg>
             </button>
           </form>

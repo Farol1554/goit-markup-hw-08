@@ -1,10 +1,57 @@
 .hero {
   background-color: var(--hero-color);
   background-image: linear-gradient(
+      to top,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/hero.jpg);
+    url("../images/hero/Hero-s.jpg");
+
+  @include mq(retina) {
+    background-image: linear-gradient(
+        to top,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero/Hero-s@2x.jpg");
+  }
+
+  @include mq(tablet) {
+    background-image: linear-gradient(
+        to top,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero/Hero-m.jpg");
+
+    @include mq(retina) {
+      background-image: linear-gradient(
+          to top,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../images/hero/Hero-m@2x.jpg");
+    }
+  }
+
+  @include mq(desktop) {
+    background-image: linear-gradient(
+        to top,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero/Hero-l.jpg");
+    padding: 200px 0;
+
+    @include mq(retina) {
+      background-image: linear-gradient(
+          to top,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../images/hero/Hero-l@2x.jpg");
+    }
+  }
   width: 1600px;
   margin: 0 auto;
   background-size: cover;
