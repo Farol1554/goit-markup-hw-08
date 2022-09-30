@@ -1,0 +1,32 @@
+@media screen and (max-width: 1199px) {
+  .occupation__section {
+    display: none;
+  }
+}
+.section.occupation__section {
+  padding-top: 0;
+}
+.occupation__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.occupation__thumb {
+  position: relative;
+}
+.occupation__title {
+  position: absolute;
+  color: var(--whight-color);
+
+  width: 100%;
+  height: 70px;
+  bottom: 0;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(47, 48, 58, 0.8);
+}
+.occupation__item {
+  flex-basis: calc((100% - 2 * 30px) / 3);
+}

@@ -1,0 +1,31 @@
+.sign-up__title,
+.socials__title,
+.feature__title,
+.our-projects__title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--h3-color);
+}
+.title {
+  margin-bottom: 30px;
+  @include font(700, 28px, 33px, center, 0.03em);
+  color: var(--h3-color);
+}
+@media screen and (min-width: 1200px) {
+  .title {
+    margin-bottom: 50px;
+    @include font(700, 36px, 42px, center, 0.03em);
+  }
+}
+.page__title {
+  color: var(--h3-color);
+}
+
+.sign-up__title,
+.socials__title {
+  margin-bottom: 20px;
+  color: var(--whight-color);
+}
